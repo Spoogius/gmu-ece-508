@@ -1,0 +1,7 @@
+Arduino Software (IDE) Portable installation
+Write a short tutorial on how to install Arduino Software (IDE) Portable https://www.arduino.cc/en/Guide/PortableIDE
+In "...\portable\sketchbook\" folder, create a subfolder and name it using your GMU student ID (e.g. ...\portable\sketchbook\g12345678"
+Your tutorial (word or pdf) shall contain
+1. Title page including your name
+2. Instructions on how to install the Arduino Software (IDE) Portable
+3. A figure showing the final folder stucture including the folder named after your Student ID G number
