@@ -1,0 +1,18 @@
+Using Arduino IDE write a C program and upload to Arduino Nano 33 IoT board. 
+The program shall 
+1. Initially blink the LED_BUILTIN at .5 Hz (1sec On, 1sec Off)
+2. Display “Led On”, “Led Off” in Terminal Monitor
+3. Accept serial commands from Serial Monitor to change the LED_BUILTIN blinking frequency to 0.5Hz, 1Hz, 2Hz, and/or 4Hz
+4. Optional: Using Fritzing software generate a diagram that shows the breadboard, Arduino Nano 33 IoT board
+5. Optional: Modify the program to upload and run in ESP32 C3 DevKitM1
+
+Record a video showing the blinking LED and Arduino Serial Terminal while entering a command to demostrate a change in blinking frequency.
+Zip all your files (Arduino Sketch program folder that includes your *.ino program, pictures and/or videos, Fritzing file, etc) and upload in blackboard as your assignment. The filename for the zip file shall be hwLec02_[your first name][your last name].zip (e.g. hwLec02_TonyBoci.zip)
+
+IMPORTANT
+All required assignment materials shall be submitted in Blackboard by the deadline. The assignment submission link will not be available after the deadline. Absolutely no late assignments will be accepted, so plan accordantly.
+All videos required for the assignment shall
+(a) be no longer than 15 seconds
+(b) have file size smaller than 25MB
+(c) be in landscape format
+Video submissions that do not comply with (a), (b), and (c) requirements will receive no points toward the assignment grading
