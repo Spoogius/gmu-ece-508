@@ -1,0 +1,50 @@
+
+1. Access and download from Gartner "Hype Cycle for the Internet of Things, 2021." Select two IoT technologies and write a paper review
+Note: Follow the instructions on how to do a paper review.
+2. Arduino Programing (IMU + OLED Display)
+Using Arduino IDE write a C program and upload to Arduino Nano 33 IoT board. The program shall 
+a. Blink the LED (1sec On, 1sec Off)
+b. Display in the OLED the following text in each ROW and update the display at 1sec interval with new content.  
+   Row 1: ECE508 mm/dd/yyyy -> where mm is month, dd is date in two digits. These are hardcoded values based on the day you wrote the program 
+   Row 2: Gxxx[nnnn] -> where nnnn are last four numbers of your GMU G number: Example Gxxxx5678 
+   Row 3: "IMU aX: " aX_val where aX_val is the IMU Acceleration x-axis
+   Row 4: "IMU aY: " aY_val where aY_val is the IMU Acceleration y-axis
+   Row 5: "IMU aZ: " aZ_val where aZ_val is the IMU Acceleration z-axis
+   Row 6: "IMU gX: " gX_val where gX_val is the IMU Gyroscope x-axis
+   Row 7: "IMU gY: " gY_val where gY_val is the IMU Gyroscope y-axis
+   Row 8: "IMU gZ: " gZ_val where gZ_val is the IMU Gyroscope z-axis
+c. Take a video of your OLED display while your program is running and as you move the board around to see changes on the values
+3. ESP32 C3 Programing (OLED Display)
+Using Arduino IDE write a C program and upload to ESP32-C3-DevKitM-1 board. The program shall 
+a. Blink the Red color of the RGB LED at 0.5Hz (1sec On, 1sec Off)
+b. Display in the OLED the following text in each ROW and update the display at 1sec interval with new content. You can use the sketch uploaded in blackboard and modify it.  
+   Row 1: ECE508 mm/dd/yyyy -> where mm is month, dd is date in two digits. These are hardcoded values based on the day you wrote the program
+   Row 2: Gxxx[nnnn] -> where nnnn are last four numbers of your GMU G number: Example Gxxxx5678
+   Row 3: Display the milliseconds since the program starts running: Hint use millis() to get the time in milliseconds
+   Row 4: (empty)
+   Row 5: (empty)
+   Row 6: (empty)
+   Row 7: (empty)
+   Row 8: "Uptime: " dd hh:mm:ss that shows the time passed since the program starts running: Hint use millis() to get the time in milliseconds and convert to dd hh:mm:ss
+c. Take a video of your OLED display while your program is running
+IMPORTANT:
+Your main programing file shall contain the following info commented out. Update the content as necessary 
+/**************************************************************************
+ Class: ECE508 Spring 2024
+ Student Name: [your name here] 
+ Gnumber: [your name here in Gxxxxnnnn format]  
+ Date: mm/dd/yyyy
+ HW: hwLec[nn] (e.g. hwLec04) 
+ Description: [A quick description of what the program does. Couple of sentences minimum]
+ Issues: [Any issue or problem]
+  **************************************************************************/
+Zip all your files (Arduino Sketch program folder that includes your *.ino program, pictures and/or videos, Fritzing file, etc.) and upload in blackboard as your assignment. 
+The filename for the zip file shall be hwLec03_[your first name][your last name].zip (e.g. hwLec03_TonyBoci.zip)
+IMPORTANT
+All required assignment materials shall be submitted in Blackboard by the deadline. The assignment submission link will not be available after the deadline. Absolutely no late assignments will be accepted, so plan accordantly.
+All videos required for the assignment shall
+(a) be no longer than 15 seconds
+(b) have file size smaller than 25MB
+(c) be in landscape format
+Video submissions that do not comply with (a), (b), and (c) requirements will receive no points toward the assignment grading
+
