@@ -1,0 +1,56 @@
+hwLec05 - Programming OLED Display, Serial command and DHT22
+
+1. Arduino Programing (DHT22 and OLED Display)
+
+Using Arduino IDE write a C program and upload to Arduino Nano 33 IoT board.
+
+Shall use the Arduino IDE Serial Monitor interface to send a command to display the temperature in F or C.
+The Serial command/data protocol shall follow the Arduino programming example presented in class
+"15 0" -> NO OLED display for Temperature and Humidity (Row 4 & Row 5 shall be empty) 
+"15 1" -> Shall display the temperature in C
+"15 2" -> Shall display the temperature in F 
+
+OLED shall display the following text in each ROW and update the display at 1sec interval with new content. 
+Row 1: Gnnnn xxxxxxxxxxxx -> where nnnn are your four last digits of G number and xxxxxxxxxxxx is your board's WiFiMAC address
+Row 2: "ECE508 HW05"
+Row 3: ""
+Row 4: "Temperature in F: " temperature: This is the startup display and will change based on the Serial command
+Row 5: "Humidity in RH%: " humidity    : This is the startup display and might be empty based on the Serial command
+Row 6: ""
+Row 7: "Use Pin D5"
+Row 8: "Uptime: " dd hh:mm:ss (where dd is number of days in two digits)
+
+Take a video of your Nano 33 IoT OLED display / DHT22 and capture changes on temperature and/or humidity values based on serial command
+
+
+2. Implement DHT22 and OLED Display program in (1) using ESP32-C3-DevKitM-1
+Note: DHT22 connects to J3 header in the same exact position as header J1. DHT22 'out' pin connects to GPIO3
+
+Take a video of your ESP32 C3 OLED display / DHT22 and capture changes on temperature and/or humidity values based on serial command
+
+
+IMPORTANT:
+
+Your main programming file shall contain the following info commented out. Update the content as necessary 
+
+/**************************************************************************
+ Class: ECE508 Spring 2024
+ Student Name: [your name here] 
+ Gnumber: [your G number in Gxxxxnnnn format]  
+ Date: mm/dd/yyyy
+
+ HW: hwLec[nn] 
+ Description: [A quick description of what the program does. Couple of sentences minimum]
+ Issues: [Any issue or problem]
+  **************************************************************************/
+
+Zip all your files (Arduino Sketch program folder that includes your *.ino program, pictures and/or videos, Fritzing file, etc.) and upload in blackboard as your assignment. 
+The filename for the zip file shall be hwLec03_[your first name][your last name].zip (e.g. hwLec03_TonyBoci.zip)
+
+IMPORTANT
+All required assignment materials shall be submitted in Blackboard by the deadline. The assignment submission link will not be available after the deadline. Absolutely no late assignments will be accepted, so plan accordantly.
+All videos required for the assignment shall
+(a) be no longer than 15 seconds
+(b) have file size smaller than 25MB
+(c) be in landscape format
+Video submissions that do not comply with (a), (b), and (c) requirements will receive no points toward the assignment grading
