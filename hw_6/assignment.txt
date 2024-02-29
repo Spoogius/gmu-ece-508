@@ -1,0 +1,49 @@
+
+1. Write a paper review for "2019 IoT Based eHealth Management System Using Arduino and Google Cloud Firestore.pdf"
+Note: Follow the instructions on how to do a paper review.
+
+2. Arduino Programing (WiFiNINA)
+Using Arduino IDE write a C program and upload to Arduino Nano 33 IoT board. The program shall 
+use the WiFiNINA library to connect with the WiFi. Follow the example programs shown in class
+
+Display in the OLED the following text in each row and update the display at 1sec interval  
+See slide 31 of "02 Programming Hands-On Lec06.pdf" for the OLED display requirements
+Row 1: Gnnnn WiFiNINA -> where nnnn are last four numbers of your GMU G number: Example G5678
+Row 2: WiFi.RSSI() and WiFi.localIP()
+Row 3: ""
+Row 4: "SSID: " and WiFi.SSID()
+Row 5: ""
+Row 6: "rM: and MAC address of your wireless router: Use getMacRouter() from "02 Programming Hands-On Lec06.pdf"
+Row 7: "wM: and MAC address of your Arduino WiFi Shield: Use getMacWifiShield() from "02 Programming Hands-On Lec06.pdf"
+Row 8: "Uptime: " dd hh:mm:ss (where dd is number of days in two digits)
+Take a video of your OLED display and board. The video shall show changes of WiFi.RSSI() value
+
+3. ESP32-C3-DevKitM-1 Programing (WiFi) 
+Implementing (2) in ESP32-C3 requires some effort
+Take a video of your OLED display and board. The video shall show changes of WiFi.RSSI() value
+
+OPTIONAL: 
+(a) Measure the time (in seconds) it takes to connect to your WiFi
+(b) Update your code so that it reconnects in case WiFi goes down
+
+IMPORTANT:
+Your main programming file shall contain the following info commented out. Update the content as necessary 
+/**************************************************************************
+ Class: ECE508 Spring 2024
+ Student Name: [your name here] 
+ Gnumber: [your G number in Gxxxxnnnn format]  
+ Date: mm/dd/yyyy
+ HW: hwLec[nn] 
+ Description: [A quick description of what the program does. Couple of sentences minimum]
+ Issues: [Any issue or problem]
+  **************************************************************************/
+Zip all your files (Arduino Sketch program folder that includes your *.ino program, pictures and/or videos, Fritzing file, etc.) and upload in blackboard as your assignment. 
+The filename for the zip file shall be hwLec03_[your first name][your last name].zip (e.g. hwLec03_TonyBoci.zip)
+IMPORTANT
+All required assignment materials shall be submitted in Blackboard by the deadline. The assignment submission link will not be available after the deadline. Absolutely no late assignments will be accepted, so plan accordantly.
+All videos required for the assignment shall
+(a) be no longer than 15 seconds
+(b) have file size smaller than 35MB (updated per the latest class announcement)
+(c) be in landscape format
+Video submissions that do not comply with (a), (b), and (c) requirements will receive no points toward the assignment grading
+
