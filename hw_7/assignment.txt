@@ -1,0 +1,65 @@
+
+
+    1. Write a paper review for "2020 IoT-Based Smart Shopping Cart Using Radio Frequency Identification.pdf" (attached)
+    Note: Follow the instructions on how to do a paper review.
+
+    2. Arduino Programing (WifiNINA Client GET HTTPS request)
+    Using Arduino IDE write a C program and upload to Arduino Nano 33 IoT board.
+    The program shall use the WiFiNINA library to connect with the WiFi and access ( https://gmu-ece508.azurewebsites.net/api/gmuepoch?code=V0drkytIHnClqQitBE_oJYJNhugUfzojkRbmq2tL8ZDUAzFu-TCk8Q== ) webserver.
+
+    HINTS: Use WiFiSSLClient library to access secure https (no need for certificate of security) 
+    Sample code initialization
+    char serverAddress[] = "gmu-ece508.azurewebsites.net";  // server domain address
+    char serverRequest[] = "/api/gmuepoch?code=V0drkytIHnClqQitBE_oJYJNhugUfzojkRbmq2tL8ZDUAzFu-TCk8Q==";
+    int serverPort = 443;
+    WiFiSSLClient httpClient;
+
+    Use GET HTTPS request to receive the website server response. Many code examples are available on the internet
+    Server sample response: {"university":"GMU","class":"ECE508 IoT Spring 2024","datetime_utc":"3/12/2024 4:49:14 AM","epoch_seconds":1710218954}
+
+    From the server response extract the "epoch_seconds" value (e.g. 1686195514)
+
+    IMPORTANT: Webserver GET requests rate shall not be higher than once per second
+    Display in the OLED the following text in each ROW and update the display at 1sec interval with new content.  
+    Row 1: Gnnnn -> where nnnn are last numbers of your G number: Example G1234
+    Row 2: WiFi.RSSI() and WiFi.localIP()
+    Row 3: ""
+    Row 4: ""
+    Row 5: ""
+    Row 6: "Server: " epoch (an example of epoch number is 1686195514)
+    Row 7: "Uptime: " dd hh:mm:ss
+    Row 8: WiFi current time in "yyyy-mm-dd hh:mm:ss" format
+    Take a 8 to 10 seconds video of your OLED display capturing changes of Server Time, Uptime and WiFiNINA date/time
+    Zip all your files and upload as your assignment.
+
+    3. Final Project Team creation: If you want to create your own team for the final project please provide 
+    the team members information (name, G-number) via email (eboci@gmu.edu) by Sunday 03/24/2024. 
+    The teams shall consist of no more than three students (one student, two students, three students.)
+
+    IMPORTANT:
+
+    Your main programming file shall contain the following info commented out. Update the content as necessary 
+
+    /**************************************************************************
+     Class: ECE508 Spring 2024
+     Student Name: [your name here] 
+     Gnumber: [your G number in Gxxxxnnnn format]  
+     Date: mm/dd/yyyy
+
+     HW: hwLec[nn] 
+     Description: [A quick description of what the program does. Couple of sentences minimum]
+     Issues: [Any issue or problem]
+      **************************************************************************/
+
+    Zip all your files (Arduino Sketch program folder that includes your *.ino program, pictures and/or videos, Fritzing file, etc.) and upload in blackboard as your assignment. 
+    The filename for the zip file shall be hwLec03_[your first name][your last name].zip (e.g. hwLec03_TonyBoci.zip)
+
+    IMPORTANT
+    All required assignment materials shall be submitted in Blackboard by the deadline. The assignment submission link will not be available after the deadline. Absolutely no late assignments will be accepted, so plan accordantly.
+    All videos required for the assignment shall
+    (a) be no longer than 15 seconds
+    (b) have file size smaller than 35MB
+    (c) be in landscape format
+    Video submissions that do not comply with (a), (b), and (c) requirements will receive no points toward the assignment grading
+    2020 IoT-Based Smart Shopping Cart Using Radio Frequency Identification.pdf
+
