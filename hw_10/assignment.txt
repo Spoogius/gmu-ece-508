@@ -1,0 +1,19 @@
+Continue working on your Final project. Follow the syllabus guidelines on how to write the final project paper
+
+1. Arduino Programing (BLE)
+Using Arduino IDE write the C program for "Demo 1: Hello Arduino BLE" and "Demo 2: Controlling LED with BLE" (chapter 6 from the ebook)
+a. Shall demonstrate a full functioning "Demo 1: Hello Arduino BLE" including the Arduino code and smartphone app
+b. Shall demonstrate a full functioning "Demo 2: Controlling LED with BLE" including the Arduino code and smartphone app. Note: Use Arduino's BUILTIN LED, PIN 13
+For Demo 1, take a screen capture of your smartphone app showing connection to Arduino BLE
+For Demo 2, take a short video showing the control of LED from the smartphone via the app (this would be a bit tricky)
+
+Zip all your files (Arduino Sketch program folder that includes your *.ino program, pictures and/or videos, Fritzing file, etc.) and upload in blackboard as your assignment. 
+The filename for the zip file shall be hwLec03_[your first name][your last name].zip (e.g. hwLec03_TonyBoci.zip)
+
+IMPORTANT
+All required assignment materials shall be submitted in Blackboard by the deadline. The assignment submission link will not be available after the deadline. Absolutely no late assignments will be accepted, so plan accordantly.
+All videos required for the assignment shall
+(a) be no longer than 15 seconds
+(b) have file size smaller than 35MB
+(c) be in landscape format
+Video submissions that do not comply with (a), (b), and (c) requirements will receive no points toward the assignment grading

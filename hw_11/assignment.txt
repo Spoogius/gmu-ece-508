@@ -1,0 +1,51 @@
+
+
+    1. Continue work with your Final project
+
+    2. Arduino Programing (FreeRTOS - DHT22, PIR)
+
+    Using Arduino IDE write a C program that uses FreeRTOS_SAMD21 libraries
+
+    The program shall have at least four threads. Thread 'threadPIR' shall have the highest priority
+    a. threadPIR (reads PIR digital output valPIR every 500ms)
+    b. threadDHT22 (reads temperature and humidity once every two seconds)
+    c. threadOLED (update display at 3 sec interval)
+    d. taskMonitor (the thread from the FreeRTOS example)
+
+    Display in the OLED the following text in each ROW.  
+    Row 1: Gnnnn FreeRTOS -> where nnnn are last four numbers of your GMU G number:
+    Row 2: ""
+    Row 3: ""
+    Row 4: "Temp in C: " temperature
+    Row 5: "Humidity in RH%: " humidity
+    Row 6: "PIR detection: " valPIR
+    Row 7: ""
+    Row 8: "Uptime: " dd hh:mm:ss
+
+    IMPORTANT:
+
+    Your main programming file shall contain the following info commented out. Update the content as necessary
+    Take a video of your OLED display and Arduino IDE Serial Monitor. The video shall show the taskMonitor output in the Serial Monitor
+
+    /**************************************************************************
+     Class: ECE508 Spring 2024
+     Student Name: [your name here] 
+     Gnumber: [your G number in Gxxxxnnnn format]  
+     Date: mm/dd/yyyy
+
+     HW: hwLec[nn] 
+     Description: [A quick description of what the program does. Couple of sentences minimum]
+     Issues: [Any issue or problem]
+      **************************************************************************/
+
+    Zip all your files (Arduino Sketch program folder that includes your *.ino program, pictures and/or videos, Fritzing file, etc.) and upload in blackboard as your assignment. 
+    The filename for the zip file shall be hwLec03_[your first name][your last name].zip (e.g. hwLec03_TonyBoci.zip)
+
+    IMPORTANT
+    All required assignment materials shall be submitted in Blackboard by the deadline. The assignment submission link will not be available after the deadline. Absolutely no late assignments will be accepted, so plan accordantly.
+    All videos required for the assignment shall
+    (a) be no longer than 15 seconds
+    (b) have file size smaller than 35MB
+    (c) be in landscape format
+    Video submissions that do not comply with (a), (b), and (c) requirements will receive no points toward the assignment grading
+

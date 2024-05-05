@@ -1,0 +1,10 @@
+{
+  "broker":"test.mosquitto.org",
+  "port":1883,
+  "topic_ctrl": "ece508/Gxxxx5779/ctrl_state",  
+  "topic_adc": "ece508/Gxxxx5779/adc_data",
+  "topic_dht": "ece508/Gxxxx5779/dht_data",
+  "fan_freq_bin": 120,
+  "fan_mag_bin": 1,
+  "humidity_threshold": 70
+}
